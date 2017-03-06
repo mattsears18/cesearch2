@@ -5,7 +5,8 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
-    "ejs": "2.3.4",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.1",
     "grunt": "1.0.1",
     "grunt-contrib-clean": "1.0.0",
     "grunt-contrib-coffee": "1.0.0",
@@ -19,9 +20,16 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
+    "jQuery": "^1.7.4",
+    "pug": "^2.0.0-beta11",
     "rc": "1.0.1",
+    "request": "^2.79.0",
     "sails": "~0.12.11",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "sails-mongo": "^0.12.2",
+    "skipper": "^0.8.0",
+    "tough-cookie-filestore": "0.0.1",
+    "xlsx": "^0.8.7"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -32,6 +40,6 @@
     "type": "git",
     "url": "git://github.com/mattsears/cesearch2.git"
   },
-  "author": "mattsears",
-  "license": ""
+  "author": "Matthew H. Sears",
+  "license": "MIT"
 }

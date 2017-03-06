@@ -32,9 +32,16 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  'GET  /':                { view: 'homepage' },
+
+  //'GET  /scraper':         { view: 'scraper/index' },
+  //'GET  /scraper/start':   'ScraperController.scrape',
+  //'GET  /scraper/issues':  'ScraperController.scrapeIssues',
+  //'GET  /scraper/test':    'ScraperController.test',
+  'GET  /scraper/upload':  { view: 'scraper/upload' },
+  'POST /scraper/upload':  'ScraperController.upload',
+
+  'GET  /article/:id':     'ArticleController.show',
 
   /***************************************************************************
   *                                                                          *
