@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  div(class="container")
+    h3 Articles
+    ol
+      each article in articles
+        li
+          span
+            a(href=article.uri target="blank")
+              span(class="glyphicon glyphicon-save-file")
+          a(href="/article/" + article.id class="ml5") #{article.name}
+          

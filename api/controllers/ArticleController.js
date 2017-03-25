@@ -12,5 +12,13 @@ module.exports = {
 
       return res.view('article/show', { article: article });
     });
+  },
+
+  list: function(req, res) {
+    Article.find({}).exec(function(err, articles){
+      if (err) return res.serverError(err);
+
+      return res.view('article/list', { articles: articles });
+    });
   }
 };
